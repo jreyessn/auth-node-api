@@ -20,7 +20,7 @@ export const store = async (req, res) => {
 	const product = await newProduct.save();
 
 	res.status(201).json({
-		message: 'Producto guardado correctamente',
+		message: 'Producto creado correctamente',
 		product
 	})
 }
